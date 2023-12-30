@@ -1,0 +1,481 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* header styling */
+.sidebar{
+    position: absolute;
+    right: 0;
+    top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    height: auto;
+    background-color: grey;
+    z-index: -9;
+}
+.sidebar li {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+}
+.sidebar li a{
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    display: block;
+    color: white;
+
+}
+.sidebar li:hover{
+    background-color: rgb(5, 5, 179);
+}
+header{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    background-blend-mode: darken;
+}
+.but{
+    margin-top: 20px;
+}
+button{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 200px;
+    font-size: 160%;
+    padding:10px  25px;
+    background-color: rgb(52, 38, 241);
+    color: white;
+    transition: all 0.5s ease;
+}
+button:hover{
+    background-color: rgb(255, 3, 100);
+
+}
+.butt{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    transition: all 0.5s ease;
+}
+.butt button{
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100px;
+    font-size: 110%;
+
+    padding:10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: all 0.5s ease;
+}
+.butt button:hover{
+    background-color: rgb(255, 3, 100);
+}
+
+.viewmore{
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    background-color: rgb(179, 178, 178);
+    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.viewmore button{
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 200px;
+    font-size: 150%;
+    padding:10px;
+    background-color: rgb(41, 4, 250);
+    color: white;
+    transition: all 0.5s ease;
+}
+.viewmore button:hover{
+    background-color: rgb(255, 3, 100);
+}
+
+
+.logo img{
+    color: white;
+    
+    height: 100px;
+    width: 150%;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    padding-right: 15px;
+}
+nav li a{
+    
+    transition: all 0.5s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+    text-decoration: none;
+    color: rgb(172, 172, 172);
+}
+.nav-links{
+    margin-right: 20px;
+}
+.nav-links li a:hover{
+    color: rgb(255, 255, 255);
+}
+.nav-links select{
+    outline: none;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    color: rgb(172, 172, 172);
+    font-size: 19PX;
+}
+.nav-links select:hover{
+    color: white;
+}
+.nav-links option{
+    outline: none;
+    background: none;
+    color: black;
+    
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu{
+    z-index: 6;
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+.menu input[type="checkbox"] {
+    transition: all 0.5s ease;
+    appearance: none;
+    cursor: pointer;
+}
+
+.menu input[type="checkbox"]:checked ~.sidebar{
+    z-index: 9;
+}
+.content{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: rgb(156, 245, 14); */
+    flex-direction: column;
+    color: white;
+}
+.content h1{
+    font-size: 55px;
+    display: block;
+    text-align: center;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* bikes section  */
+
+.bikes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: rgb(179, 178, 178);
+    column-gap: 100px;
+
+}
+.bike1{
+    height: 430px;
+    width: 300px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.bike1 img{
+    
+    height: 200px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    filter: drop-shadow(2px 2px 5px black);
+    mix-blend-mode: multiply;
+}
+.title{
+    padding-top:20px ;
+    padding-top:20px ;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800px;
+}
+
+.title1{
+    padding-top:20px ;
+    padding-top:20px ;
+    text-align: START;
+    font-size: 25px;
+    font-weight: 800px;
+}
+.marquee img{
+    height: 100px;
+}
+marquee{
+  
+  
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+
+}
+
+.description{
+    padding-top:20px ;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600px;
+
+}
+.description1{
+    padding-top:20px ;
+    text-align: start;
+    font-size: 20px;
+    font-weight: 600px;
+
+}
+.main{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: rgb(179, 178, 178);
+    font-size: 45px;
+    text-align: center;
+    font-weight: 600px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline
+}
+.history{
+    background-color: rgb(179, 178, 178);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 20px;
+    height: auto;
+    padding: 30px;
+    width: 100%;
+}
+.left img{
+    width: 500px;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+.right{
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 500px;
+    height: 350px;
+}
+.history .title{
+    text-decoration: underline;
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(7, 7, 51);
+    color: white;
+    column-gap: 40px;
+    padding-bottom: 20PX;
+}
+.foot{
+    padding: 5px 20px;
+    width: 200px;
+    margin-bottom: 50px;
+    
+}
+.last{
+    color: white;
+    text-align: center;
+    background-color: rgb(0, 0, 7);
+    padding: 20px;
+}
+#question{
+    width: 100%;
+    height: auto;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(179, 178, 178);
+    overflow: hidden;
+    transition: all 0.5s ease;
+    row-gap: 10px;
+
+}
+#question #answer{
+    overflow: hidden;
+}
+.question1{
+    background-color: white;
+    color: black;
+    font-size: 150%;
+    width: 400px;
+    height: 100px;
+    padding: 20px;
+    overflow: hidden;
+}
+.question1 a{
+    text-decoration: none;
+    color: inherit;
+}
+#answer{
+    background-color: white;
+    color: black;
+    font-size: 150%;
+    width: 400px;
+    height: 0vh;
+    padding: 20px;
+    overflow: hidden;
+}
+.question1 a:target {
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    
+    .nav-links{
+        display: none;
+    }
+    .menu{
+        display:inline-block;
+    }
+    .content h1{
+        font-size: 30px; 
+    }
+    header{
+        background-size: cover;
+        background-position-x: center;
+        height: 100vh;
+    }
+    .content p{
+        font-size: 25px;
+    }
+    .main{
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    .bike1{
+        padding-bottom: 10px;
+    }
+    .bikes{
+        row-gap: 10px;
+    }
+    .left img{
+        width: 300px;
+    }
+    .right {
+        width: 300px;
+        height: auto;
+    }
+    
+    .foot{
+        width: 150px;
+        padding-bottom: 20px;
+    }
+    .foot .title{
+        font-size: 20px;
+
+    }
+    .foot .description{
+        font-size: 15px;
+
+    }
+    .history{
+        row-gap: 20px;
+        height: auto;
+        padding: 20px;
+    }
+    .but{
+        margin-top: 18px;
+    }
+    button{
+        outline: none;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        width: 120px;
+        font-size: 130%;
+        padding:5px  15px;
+     
+        color: white;
+    }
+    .logo img{
+        width: 150%;
+    }
+    input[type="checkbox"]{
+        cursor: pointer;
+    }
+}
