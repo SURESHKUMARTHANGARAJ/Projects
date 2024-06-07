@@ -1,0 +1,1020 @@
+:root {
+    --bluecolor: rgb(2, 150, 255);
+    --pinky: rgb(199, 26, 55);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.social{
+    background-color: transparent;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.social a{
+    padding: 7px;
+    color: var(--bluecolor);
+    font-size: 25px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bluecolor);
+}
+
+::-webkit-scrollbar-track {
+    color: var(--pinky);
+}
+
+
+
+aside {
+    box-shadow: 0px 0px 20px black;
+    z-index: 10;
+    transition: all 0.3s linear;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 50%;
+    background-color: var(--bluecolor);
+    color: white;
+
+}
+
+aside .cross {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 250%;
+    color: inherit;
+    background-color: inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transform: rotate(45deg);
+}
+
+aside .cross:hover {
+    color: var(--pinky);
+}
+
+
+aside ul {
+
+    margin-top: 20vh;
+    list-style: none;
+    color: inherit;
+    width: 100%;
+    background-color: var(--bluecolor);
+}
+
+aside ul li {
+    text-align: center;
+    list-style: none;
+    padding: 20px;
+    background-color: var(--bluecolor);
+    width: 100%;
+}
+
+aside ul li a {
+    text-decoration: none;
+    background-color: inherit;
+    color: white;
+
+}
+
+aside .icon {
+    background-color: inherit;
+}
+
+aside ul li:hover {
+    background-color: var(--pinky);
+}
+
+
+
+aside .fa-download {
+    background-color: white;
+    color: inherit;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    outline: none;
+    font-size: 150%;
+    margin-top: 20px;
+
+}
+
+aside a {
+    background-color: inherit;
+}
+
+
+
+
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.logo span {
+    color: white;
+    /* font-size: 40px; */
+    font-family: "Pacifico";
+
+}
+
+.logo {
+    padding: 30px;
+    font-size: 30px;
+    font-family: "Pacifico";
+    color: rgb(199, 26, 55);
+}
+
+nav {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bluecolor);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid transparent;
+    overflow: hidden;
+    box-shadow: 0 0 20px grey;
+}
+
+nav ul {
+    margin-right: 20px;
+}
+
+nav ul li {
+    
+    list-style: none;
+    display: inline;
+    margin: 10px 10px;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.menu {
+    font-size: 130%;
+    display: none;
+}
+
+nav .nlink::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+nav .nlink:hover::before,
+nav .nlink.active::before {
+    width: 100%;
+    color: white;
+}
+
+nav .nlink.active {
+    color: white;
+}
+
+nav li:hover .icon {
+    color: white;
+}
+
+nav li .icon {
+    color: white;
+}
+
+nav li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 500px;
+}
+
+nav li a:hover {
+    color: white;
+}
+
+nav .fa-download {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+}
+
+
+
+nav .fa-download:hover {
+    background-color: white;
+    color: var(--bluecolor);
+}
+
+
+/* Header style */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    gap: 5px;
+    background-color: white;
+    position: relative;
+    margin-top: 30px;
+    overflow: hidden;
+    /* background: url(img/mainbg.jpg);
+    background-repeat: no-repeat;
+    background-position: start;
+    background-size: cover; */
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.overlay{    
+    z-index: 2;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 50%;
+}
+header img{
+    /* mix-blend-mode: luminosity; */
+    width: 300px;
+    height: 300px;
+    border: none;
+    border-radius: 50%;
+    animation: shadow 2s linear infinite;
+}
+@keyframes shadow {
+    0%{
+        box-shadow: 0px 0px 50px var(--bluecolor);
+
+    }
+    50%{
+        box-shadow: 0px 0px 60px var(--pinky);
+        
+
+    }
+    100%{
+        box-shadow: 0px 0px 50px var(--bluecolor);
+
+    }
+    
+}
+header .content{
+    z-index: 3;
+    justify-content: center;
+    text-align: start;
+    padding: 40px;
+    width: 50vw;
+}
+
+
+header h3{
+    z-index: 3;
+    color: black;
+    margin: 5px;
+}
+header h2{
+    z-index: 3;
+    font-size: 2.2rem;
+    color: black;
+    margin: 5px;
+}
+header p{
+    padding: 10px 5px;
+    z-index: 3;
+    font-weight: 500;
+    color: black;
+    margin: 5px;
+}
+header button{
+    margin-top: 10px;
+    z-index: 3;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: var(--bluecolor);
+    border: 2px solid var(--bluecolor);
+    border-radius: 8px;
+    
+
+}
+
+/* auto type */
+.auto-type {
+    position: relative;
+    padding: 0px;
+}
+.auto-type::before{
+    content: "Front-end Developer";
+    color: var(--bluecolor);
+    animation: words 20s infinite;
+}
+.auto-type::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: white;
+    border-left: 2px solid var(--bluecolor);
+    right: -8px;
+    animation: cursor .8s infinite,typing 20s steps(14) infinite;
+}
+@keyframes cursor {
+    to{
+        border-left: 2px solid white;
+    }
+    
+}
+
+@keyframes words {
+    0%,20%{
+        content: "Frontend Developer";
+    }
+    21%,40%{
+        content: "UI / UX Designer ";
+    }
+    41%,60%{
+        content: "Graphics Designer";
+    }
+    41%,60%{
+        content: "Frontend Developer";
+    }
+    61%,80%{
+        content: "UI / UX Designer ";
+    }
+    81%,100%{
+        content: "Graphic Designer "; 
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+
+
+header button a{
+    color: white;
+}
+header button:hover{
+    background-color: var(--bluecolor);
+    color: white;
+}
+header .fa-play{
+    color: inherit;
+}
+header span{
+    color: var(--bluecolor);
+}
+
+#skills{
+    background-color:var(--bluecolor) ;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    
+}
+#skills .heading{
+    text-align: center;
+    padding: 5px;
+}
+.heading h2{
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+    color: white;
+}
+#skills .skill-p{
+    text-align: center;
+    width: 600px;
+}
+.heading p{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.skill{
+    margin: 0;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+
+.skill .skill-container{
+    border: 1px solid var(--bluecolor);
+    border-radius: 15px;
+    width: 450px;
+    height: 200px;
+    background-color: white;
+    color: black;
+    text-align: start;
+    padding: 30px;  
+
+}
+.skill-container h3{
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+.skill-container p{
+    padding-bottom: 10px;
+}
+.skill-container button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--bluecolor);
+    font-weight: bolder;
+    
+}
+.skill-container button a{
+    color: var(--bluecolor);
+}
+
+
+
+#project{
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    
+}
+#project .heading{
+    padding: 50px;
+}
+#project .heading h2{
+    text-align: center;
+    padding: 5px;
+    color: black;
+}
+
+#project .skill-p p{
+    color: black;
+    text-align: center;
+    width: 800px;
+}
+
+.pro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 10px;
+}
+.pro .pro-container{
+    width: 450px;
+    height: 300px;
+    position: relative;
+}
+.pro .pro-container img{
+    height: 100%;
+    width: 100%;
+}
+.pro-container button{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    outline: none;
+    font-weight: bold;
+    border: 1px solid var(--bluecolor);
+    border-radius: 7px;
+    padding: 10px;
+    background-color: var(--bluecolor);
+    color: var(--bluecolor);
+    font-size: 1rem;
+
+}
+#contact{
+    width: 100%;
+    background-color: var(--bluecolor);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 60px;
+    gap: 50px;
+    height: auto;
+
+}
+#contact .lt{
+    width: 500px;
+    height: 350px;
+    text-align: start;
+    padding: 20px;
+}
+#contact .lt h2{
+    font-size: 3rem;
+}
+.lt fa{
+    font-size: 80px;
+}
+.lt .phone{
+    padding: 20px;
+}
+.lt .email{
+    padding: 20px;
+}
+.lt .address{
+    padding: 20px;
+}
+#contact .rt{
+    width: 500px;
+    height: 350px;
+
+}
+#contact .rt iframe{
+    width: 100%;
+    height: 100%;
+}
+#queries{
+    width: 100%;
+    height: auto;
+    padding: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#queries .query h2{
+    font-size: 2rem;
+    text-align: start;
+    padding-bottom: 10px;
+
+}
+#queries .ebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 500px;
+}
+#queries .ebox input{
+    padding: 10px;
+    border: 0.5px solid black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 80%;
+    border-right: none;
+    
+}
+#queries .ebox input:focus{
+    outline: none;
+}
+#queries .ebox button{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: var(--bluecolor);
+    border-left: none;
+    color: white;
+    padding: 10px;
+    padding-right: 20px;
+    outline: none;
+    border: 0.5px solid black;
+    padding-left: 20px;
+    
+}
+
+#abouts{
+    width: 100%;
+    background-color: var(--bluecolor);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.about-lt{
+    width: 300PX;
+}
+.about-lt img{
+    width: 300px;
+    height: 300px;
+}
+.about-rt{
+    width: 600PX;
+}
+.about-rt p{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    justify-content: start;
+}
+.headings h2{
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+    color: white;
+}
+.headings{
+    padding-top: 15PX;
+    padding-bottom: 10PX;
+    background-color: var(--bluecolor);
+}
+
+footer{
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+@media screen and (max-width:700px) {
+    *{
+        padding: 0;
+        margin: 0;
+        height: auto;
+        /* overflow: hidden; */
+    }
+    header{
+        overflow: hidden;
+        background-color: white;
+        /* background: url(img/backgroound.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; */
+    }
+    nav{
+        overflow: hidden;
+    }
+    .nlink {
+        display: none;
+
+    }
+    #project .skill-p p {
+        color: black;
+        text-align: center;
+        width: 350px;
+    }
+    body{
+        margin: 0;
+
+    }
+    nav{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .download {
+        display: none;
+    }
+    
+
+
+
+    header{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        padding: 10px;
+        gap: 5px;
+    }
+    header img{
+        box-shadow: 0px 0px 20px var(--bluecolor);
+        width: 50vw;
+        order: 1;
+        height: auto;
+        border: none;
+        border-radius: 50%;
+
+    }
+    header .content{
+        order: 2;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    header h3{
+        color: black;
+        margin: 5px;
+    }
+    header h2{
+        color: black;
+        margin: 5px;
+        font-size: 1.5rem;
+    }
+    header p{
+        color: black;
+        margin: 5px;
+        font-family: "roboto";
+        font-weight: 450px;
+    }
+
+
+
+
+
+    #skills{
+        background-color:var(--bluecolor) ;
+        width: 100%;
+        padding: 10px;
+        padding-bottom: 50px;
+        
+    }
+    #skills .heading{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+    }
+    .heading h2{
+        text-align: center;
+        font-size: 2rem;
+        padding: 5px;
+        color: white;
+    }
+    #skills .skill-p{
+        text-align: center;
+        width: 300px;
+    }
+    .heading p{
+        color: white;
+        text-align: center;
+        font-size: 10px;
+        padding: 5px;
+    }
+    
+    .skill{
+        margin: 0;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+    
+    }
+    
+    .skill .skill-container{
+        border: 1px solid var(--bluecolor);
+        border-radius: 15px;
+        width: 300px;
+        height: 150px;
+        background-color: white;
+        color: black;
+        text-align: start;
+        padding: 20px;  
+    
+    }
+    .skill-container h3{
+        font-size: 1rem;
+        padding-bottom: 5px;
+    }
+    .skill-container p{
+        padding-bottom: 5px;
+        font-size: 10px;
+    }
+    .skill-container button{
+        background-color: transparent;
+        outline: none;
+        border: none;
+        color: var(--bluecolor);
+        font-size: 10px;
+        font-weight: bold;
+        
+    }
+ 
+    
+
+    #project{
+        color: black;
+        background-color: white;
+       
+        padding: 10px;
+        
+    }
+    #project .heading{
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+
+    }
+    #project .heading h2{
+        text-align: center;
+        padding: 5px;
+        color: black;
+
+    }
+    
+    #project .skill-p p{
+        color: black;
+        text-align: center;
+        width: 300px;
+    }
+    
+    .pro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:60px;
+        padding: 5px;
+        padding-bottom: 40px;
+    }
+    .pro .pro-container{
+        width: 300px;
+        height: 150px;
+        position: relative;
+    }
+    .pro .pro-container img{
+        height: 100%;
+        width: 100%;
+    }
+    .pro-container button{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        outline: none;
+        font-weight: bold;
+        border: 1px solid var(--bluecolor);
+        border-radius: 7px;
+        padding: 10px;
+        background-color: var(--bluecolor);
+        color: white;
+        font-size: 10px;
+    
+    }
+    
+
+
+
+    #contact{
+        width: 100%;
+        background-color: var(--bluecolor);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    
+    }
+    #contact .lt{
+        width: 300px;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+    }
+    #contact .lt h2{
+        font-size: 2rem;
+    }
+    .lt .phone{
+        margin-top: 20px;
+        padding: 5px;
+    }
+    .lt .email{
+        padding: 5px;
+    }
+    .lt .address{
+        padding: 5px;
+    }
+    #contact .rt{
+        width: 100%;
+        padding: 15px;
+    
+    }
+    #contact .rt iframe{
+        width: 100%;
+        height: 100%;
+    }
+    #queries .query h2{
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 10px;
+    
+    }
+    .about-rt p{
+        color: white;
+        font-size: 1.1rem;
+        font-weight: bold;
+        justify-content: start;
+    }
+    .social{
+        justify-content: center;
+    }
+   
+    
+}
