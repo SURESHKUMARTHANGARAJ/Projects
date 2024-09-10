@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 90px;
+    background-color: blueviolet;
+    padding: 10px 50px;
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100%;
+    position: relative;
+}
+
+.outer {
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 52px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.game-box {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+}
+
+#guess {
+    text-transform: uppercase;
+}
+
+.box {
+    padding: 5px;
+    border: 3px solid blueviolet;
+    border-radius: 9px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box p {
+    opacity: 0;
+    text-transform: uppercase;
+    color: rgb(15, 187, 15);
+    font-weight: 600;
+}
+
+#reset, #guess-btn {
+    all: unset;
+    padding: 6px 16px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+input {
+    padding: 8px 16px;
+    outline: none;
+}
+
+#quest-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+}
+
+#quest-container .q-tag {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#quest-container #question {
+    font-size: 17px;
+    text-align: center;
+    color: rgb(73, 72, 72);
+}
+
+#Remaining-moves {
+    color: blue;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width:425px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        height: 70px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .game-box {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    input {
+        padding: 8px 16px;
+        outline: none;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input {
+        width: 70%;
+        margin: 20px;
+        border: 1px solid black;
+    }
+
+    #guess-btn {
+        width: 65%;
+        text-align: center;
+
+    }
+
+    #reset {
+        width: 65%;
+        text-align: center;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width:375px) {
+    .game-box {
+        padding: 15px;
+        gap: 5px;
+    }
+}

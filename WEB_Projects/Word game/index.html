@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="nav"><h1 id="title">Guess the Word!</h1></nav>
+   <div class="outer">
+    <div id="quest-container">
+        <span class="q-tag">Question :</span>
+        <p id="question"></p>
+    </div>
+    <div class="game-box">
+    </div>
+    <p id="Remaining-moves">Remaining Moves : <span id="remain"></span></p>
+    <form >
+        <input type="text" id="guess" autocomplete="off" required autofocus placeholder="Enter Guessed Letter">
+        <button onclick="Guess(event)" type="submit" id="guess-btn" >Guess</button>
+    </form>
+    <span id="msg"></span>
+    <button onclick="Random(event)" id="reset">Reset Game</button>
+   </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
