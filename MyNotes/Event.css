@@ -1,0 +1,189 @@
+* {
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 1;
+    display: none;
+}
+
+#popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background-color: rgb(25, 0, 255);
+    height: 400px;
+    width: 350px;
+    padding: 20px;
+    display: none;
+    border-radius: 15px;
+    border: 2px solid blue;
+    color: black;
+}
+
+#popup input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+#popup textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    outline: none;
+    border: none;
+    border: 1px solid white;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+#popup input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+#popup textarea::placeholder {
+    color: rgb(255, 254, 254);
+}
+
+#book-add,
+#book-cancel {
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    color: black;
+    background-color: skyblue;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+#add {
+    font-size: 200%;
+    border: 1px solid red;
+    background-color: skyblue;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+#add {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border: 1px solid red;
+    font-size: 200%;
+    border-radius: 50%;
+    color: white;
+    z-index: 5;
+}
+
+#container {
+    padding: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav {
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    font-size: 150%;
+    padding: 20px;
+}
+
+nav h1 {
+    color: white;
+    font-style: italic;
+}
+
+nav span {
+    color: orangered;
+    font-style: italic;
+}
+
+.card {
+    -ms-flex-order: 1;
+    border-radius: 8px;
+    min-height: 300px;
+    width: 400px;
+    background-color: rgb(55, 0, 255);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 10px;
+    row-gap: 10px;
+    position: relative;
+}
+
+#delete {
+    font-size: 17px;
+    font-weight: 700px;
+    text-transform: uppercase;
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    color: black;
+    background-color: skyblue;
+    border: 1px solid rgb(2, 2, 2);
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 120%;
+}
+
+.card p {
+    font-size: 120%;
+
+    padding: 5px;
+}
+
+#delete {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+}
+
+hr {
+    width: 100%;
+}

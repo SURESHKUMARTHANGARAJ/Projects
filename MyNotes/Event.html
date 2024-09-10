@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Event.css">
+</head>
+
+<body>
+    <div id="overlay" onclick="bookcancel()"></div>
+    <div id="popup">
+        <form>
+            <input type="text" id="bookname" placeholder="Event Name" required autofocus>
+            <input type="date" id="bookauthor">
+            <input type="time" id="booktime">
+            <textarea id="textarea" rows="5" placeholder="Short description"></textarea>
+            <button id="book-add" onclick="added(event)" type="submit">ADD</button>
+            <button id="book-cancel" onclick="bookcancel(event)">CANCEL</button>
+        </form>
+    </div>
+    <nav>
+        <h1>My<span>Notes</span></h1>
+    </nav>
+    <hr>
+    <div id="container">
+        <button id="add" onclick="add()">+</button>
+    </div>
+    <script src="Event.js"></script>
+</body>
+
+</html>
