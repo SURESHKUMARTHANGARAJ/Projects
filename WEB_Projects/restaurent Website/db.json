@@ -1,0 +1,99 @@
+
+[
+    {
+    "title":"Murukku",
+    "img":"murukku.jpg",
+    "price":"$299.00",
+    "description":"Deal combo of 2 Classic Chicken Rolls, Large Fries, 2 Dips & Pepsi 475ml"
+},
+{
+    "title":"burger",
+    "img":"burger.jpg",
+    "price":"$499.00",
+    "description":"Deal combo of 2 Classic Chicken Rolls, Large Fries, 2 Dips & Pepsi 475ml"
+},
+{
+    "title":"sandwich",
+    "img":"sandwich.jpg",
+    "price":"$199.00",
+    "description":"Deal combo of 2 Classic Chicken Rolls, Large Fries, 2 Dips & Pepsi 475ml"
+},
+{
+    "title":"Pasta",
+    "img":"pasta.jpg",
+    "price":"$199.00",
+    "description":"Deal combo of 2 Classic Chicken Rolls, Large Fries, 2 Dips & Pepsi 475ml"
+},
+{
+    "title":"Vannila Icecream",
+    "img":"vannila.jpg",
+    "price":"$199.00",
+    "description":"Deal combo of 2 Classic Chicken Rolls, Large Fries, 2 Dips & Pepsi 475ml"
+},
+{
+    "title":"strawberry Icecream",
+    "img":"strawberry.jpg",
+    "price":"$199.00",
+    "description":"Deal combo of 2 Classic Chicken Rolls, Large Fries, 2 Dips & Pepsi 475ml"
+},
+{
+    "title":"Shawarma",
+    "img":"shawarma.jpg",
+    "price":"$199.00",
+    "description":"Deal combo of 2 Classic Chicken Rolls, Large Fries, 2 Dips & Pepsi 475ml"
+},
+{
+    "title":"Samosa",
+    "img":"samosa.jpg",
+    "price":"$199.00",
+    "description":"Deal combo of 2 Classic Chicken Rolls, Large Fries, 2 Dips & Pepsi 475ml"
+},
+{
+    "title":"Pizza",
+    "img":"pizza.jpg",
+    "price":"$199.00",
+    "description":"Deal combo of 2 Classic Chicken Rolls, Large Fries, 2 Dips & Pepsi 475ml"
+},
+{
+    "title":"Paneer",
+    "img":"paneer.jpg",
+    "price":"$199.00",
+    "description":"Deal combo of 2 Classic Chicken Rolls, Large Fries, 2 Dips & Pepsi 475ml"
+},
+{
+    "title":"Orange",
+    "img":"orange.jpg",
+    "price":"$199.00",
+    "description":"Deal combo of 2 Classic Chicken Rolls, Large Fries, 2 Dips & Pepsi 475ml"
+},
+{
+    "title":"Meals",
+    "img":"meal.jpg",
+    "price":"$199.00",
+    "description":"Deal combo of 2 Classic Chicken Rolls, Large Fries, 2 Dips & Pepsi 475ml"
+},
+{
+    "title":"Grill",
+    "img":"grill.jpg",
+    "price":"$199.00",
+    "description":"Deal combo of 2 Classic Chicken Rolls, Large Fries, 2 Dips & Pepsi 475ml"
+},
+{
+    "title":"French Fries",
+    "img":"fries.jpg",
+    "price":"$199.00",
+    "description":"Deal combo of 2 Classic Chicken Rolls, Large Fries, 2 Dips & Pepsi 475ml"
+},
+{
+    "title":"French Fries",
+    "img":"french-fries.jpg",
+    "price":"$199.00",
+    "description":"Deal combo of 2 Classic Chicken Rolls, Large Fries, 2 Dips & Pepsi 475ml"
+},
+{
+    "title":"Choco Icecream",
+    "img":"choco.jpg",
+    "price":"$199.00",
+    "description":"Deal combo of 2 Classic Chicken Rolls, Large Fries, 2 Dips & Pepsi 475ml"
+}
+]

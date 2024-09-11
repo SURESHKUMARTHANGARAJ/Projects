@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="cart" id="cart">
+        <h1>CART ITEMS &nbsp;&nbsp;<i class="fa-solid fa-bag-shopping"></i></h1>
+        <div class="cart-product" id="cart-product">
+            
+        </div>
+        <div id="cart-close"><i class="fa-solid fa-xmark"></i></div>
+        <button class="checkout">Check Out</button>
+    </div>
+    <header>
+        <nav>
+            <div class="logo"><img src="img/logo.png" alt=""></div>
+            <div class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            </div>
+            <div class="nav-icons">
+                <div class="heart"><a href="#"><i class="fa-solid fa-heart"></i></a><span>0</span></div>
+                <div class="shopping"><a href="#" id="cart-open"><i class="fa-solid fa-cart-shopping"></i></a><span id="cart-count">0</span></div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <h1>Your Favourite Food</h1>
+            <h3>At your Door Step</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae fugit dignissimos voluptatibus nulla maiores esse eos, architecto, nemo temporibus praesentium quibusdam veniam enim a ipsa vel, omnis vero fugiat. Iste.</p>
+            <button class="explore-btn" role="button">Explore&nbsp;&nbsp;<i class="fa-solid fa-angles-right"></i></button>
+        </div>
+    </header>
+    <main>
+        <div class="head">
+        <p class="heading">Food Products</p>
+        <p class="sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusantium, error doloribus distinctio expedita consectetur nemo autem reiciendis necessitatibus molestias.</p>
+        </div>
+        <div class="search-container">
+            <input type="text" autocomplete="off" placeholder="Search your favourite Food...." id="search-input" onkeyup="SearchItem()">
+            <button type="submit" id="search-btn" >Search</button>
+        </div>
+        <div class="Product-container">
+            
+        </div>
+    </main>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
