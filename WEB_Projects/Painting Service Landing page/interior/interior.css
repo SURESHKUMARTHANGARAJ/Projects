@@ -1,0 +1,628 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+    
+}
+::-webkit-inner-spin-button,::-webkit-outer-spin-button{
+    appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    appearance: textfield;
+}
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+:root{
+    --bluecolor:rgb(0, 179, 250);
+    --pink:rgb(245, 48, 81);
+    --black:black;
+    --white:white;
+    --violet:rgb(110, 1, 110);
+
+}
+/* NAVIGATION BAR START*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 5px 80px;
+    font-size: 2rem;
+    width: 100%;
+    background-color: var(--violet);
+}
+nav a{
+    text-decoration: none;
+    
+}
+nav .logo{
+    height: 60px;
+    width: 100px;
+}
+nav .logo img{
+    width: 100px;
+    height: 60px;
+}
+nav .cont-button a button{
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: white;
+    color: var(--violet);
+    outline: none;
+    border: none;
+
+}
+/* NAVIGATION BAR END*/
+
+
+/* Header start */
+
+header{
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 233, 255);
+
+}
+header .content{
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    background-image: url(/interior/interiorimg/interior1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: auto;
+    padding-bottom: 50px;
+    font-size: 3rem;
+    position: relative;
+    
+}
+.back a{
+    padding: 8px 10px;
+    border-radius: 50%;
+    background-color: white;
+    text-decoration: none;
+    color: var(--violet);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1rem;
+    
+
+}
+
+/* Header end */
+.heading{
+    background-color: rgb(255, 233, 255);
+
+    width: 100%;
+    text-align: center;
+    text-align: center;
+    padding: 0px 150px ;
+}
+ .heading h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+
+}
+/* main start */
+main .img{
+    background-color: rgb(255, 233, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 20px;
+    overflow: hidden;
+    padding: 50px;
+    flex-wrap: wrap;
+    
+}
+main .img img{
+    height: 300px;
+    width: 500px;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+}
+
+/* main end */
+/* contact  */
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    gap: 80px;
+
+}
+#contact .form-header{
+    width: 450px;
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+#contact form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+form h3{
+    color: var(--violet);
+    text-align: center;
+}
+form input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+form button{
+    margin-top: 30px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    background-color: var(--violet);
+}
+
+
+
+
+/* contact end */
+
+/* ABOUT START */
+
+#about{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 30px;
+    background-color: rgb(247, 218, 247);
+    color: var(--violet);
+}
+#about .paint p{
+   padding: 5px;
+}
+#about .paint h1{
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+#about .address p{
+   padding: 5px;
+}
+#about .address h1{
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+#about .map{
+    width: 300px;
+    height: 300px;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+.copyright{
+    width: 100%;
+    height: aut0;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--violet);
+    color: white;
+}
+
+/* ABOUT END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+
+
+
+/* Header start */
+
+header{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 233, 255);
+
+}
+header .content{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--violet);
+    color: white;
+    height: auto;
+    padding-bottom: 30px;
+    font-size: 1.2rem;
+    
+}
+.back a{
+    padding: 6px 8px;
+    border-radius: 50%;
+    background-color: white;
+    text-decoration: none;
+    color: var(--violet);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.9rem;
+    
+
+}
+
+
+/* Header end */
+.heading{
+    background-color: rgb(255, 233, 255);
+    width: 100%;
+    text-align: center;
+    text-align: center;
+    
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+ .heading h1{
+    text-decoration: underline;
+    font-size: 1.8rem;
+    padding-bottom: 5px;
+
+}
+.heading p{
+    font-size: 0.8rem;
+}
+/* main start */
+main .img{
+    background-color: rgb(255, 233, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    padding: 10px;
+    flex-wrap: wrap;
+    
+}
+main .img img{
+    height: 200px;
+    width: 100%;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+}
+
+/* main end */
+
+
+/* ABOUT START */
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
+    background-color: rgb(247, 218, 247);
+    color: var(--violet);
+    text-align: center;
+}
+#about .paint p{
+   padding: 5px;
+}
+#about .paint h1{
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+#about .address p{
+   padding: 5px;
+   font-size: 0.9rem;
+}
+#about .address h1{
+    font-size: 1.4rem;
+
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+#about .map{
+    width: 300px;
+    height: 200px;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* ABOUT END */
+
+
+/* NAVIGATION BAR START*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 8px 20PX ;
+    width: 100%;
+    background-color: var(--violet);
+}
+nav a{
+    text-decoration: none;
+    
+}
+nav .logo{
+    height: 50px;
+    width: 100px;
+}
+nav .logo img{
+    width: 100px;
+    height: 50px;
+}
+nav .cont-button a button{
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 12px;
+    background-color: white;
+    color: var(--violet);
+    font-size: 0.9rem;
+
+
+}
+/* NAVIGATION BAR END*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* contact  */
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    height: auto;
+    padding: 20px;
+    gap: 30px;
+    overflow: hidden;
+
+}
+#contact .form-header{
+    width: 95%;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#contact form{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+form h3{
+    color: var(--violet);
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+form input{
+    padding: 5px;
+    border: none;
+    outline: none;
+    width: 90%;
+    border-bottom: 2px solid black;
+}
+
+form button{
+    margin-top: 30px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    background-color: var(--violet);
+}
+
+
+
+
+/* contact end */
+
+}
